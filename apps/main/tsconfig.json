@@ -1,0 +1,17 @@
+{
+  "exclude": ["node_modules"],
+  "extends": "@mb-embrace/config-tsconfig/tsconfig.vite.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "build",
+    "baseUrl": "src",
+    "allowJs": true,
+
+    "jsx": "react-jsx",
+
+    "paths": {
+      ".": ["."]
+    }
+  },
+  "include": ["src", "../../node_modules/@mb-embrace/**/**/*.d.ts"]
+}
