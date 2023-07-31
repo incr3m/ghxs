@@ -1,0 +1,69 @@
+{
+  "mb1Tmp": {
+    "code": "mb1",
+    "env": "tmp",
+    "domainName": "mb1tmp.embrace.technology",
+    "_profile": "mb-jim"
+  },
+  "mbDev": {
+    "code": "mb",
+    "env": "dev",
+    "domainName": "mbdev.embrace.technology",
+    "_profile": "mb-jim"
+  },
+  "mbStg": {
+    "code": "mb",
+    "env": "stg",
+    "domainName": "mbstg.embrace.technology",
+    "_profile": "mb-jim"
+  },
+  "embvik2Dev": {
+    "code": "embvik2",
+    "name": "embrace",
+    "env": "dev",
+    "domainName": "ik.embrace.technology",
+    "_profile": "mb-demo-jim"
+  },
+  "embvo2us1Dev": {
+    "code": "embvo2us1",
+    "name": "embrace",
+    "env": "dev",
+    "domainName": "o2us.embrace.technology",
+    "_profile": "mb-demo-jim"
+  },
+  "mbdemoDemo": {
+    "code": "mbdemo",
+    "name": "embrace",
+    "env": "demo",
+    "domainName": "demo.embrace.technology",
+    "_profile": "mb-jim"
+  },
+  "adDemo": {
+    "code": "ad",
+    "name": "embrace",
+    "env": "demo",
+    "domainName": "ad.embrace.technology",
+    "_profile": "mb-ad-jim"
+  },
+  "itworksDemo": {
+    "code": "itworks",
+    "name": "embrace",
+    "env": "demo",
+    "domainName": "itworks.embrace.technology",
+    "_profile": "mb-jim"
+  },
+  "integralDemo": {
+    "code": "integral",
+    "name": "embrace",
+    "env": "demo",
+    "domainName": "integral.embrace.technology",
+    "_profile": "mb-jim"
+  },
+  "simpleclickDemo": {
+    "code": "simpleclick",
+    "name": "embrace",
+    "env": "demo",
+    "domainName": "simpleclick.embrace.technology",
+    "_profile": "mb-jim"
+  }
+}

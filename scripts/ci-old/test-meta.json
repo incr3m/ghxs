@@ -1,0 +1,280 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-embrace-prbaej-60844-authRole",
+      "UnauthRoleArn": "arn:aws:iam::265681005590:role/amplify-embrace-prbaej-60844-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::265681005590:role/amplify-embrace-prbaej-60844-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-embrace-prbaej-60844-deployment",
+      "UnauthRoleName": "amplify-embrace-prbaej-60844-unauthRole",
+      "StackName": "amplify-embrace-prbaej-60844",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:265681005590:stack/amplify-embrace-prbaej-60844/00cea380-b061-11ea-a6d1-0a0ad6464e74",
+      "AmplifyAppId": "d29dyd1nwlp91l"
+    }
+  },
+  "hosting": {
+    "S3AndCloudFront": {
+      "service": "S3AndCloudFront",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "S3BucketSecureURL": "https://embrace-20200110073637-hostingbucket-prbaej.s3.amazonaws.com",
+        "WebsiteURL": "http://embrace-20200110073637-hostingbucket-prbaej.s3-website-ap-southeast-2.amazonaws.com",
+        "Region": "ap-southeast-2",
+        "HostingBucketName": "embrace-20200110073637-hostingbucket-prbaej"
+      },
+      "lastPushTimeStamp": "2020-06-17T06:49:46.532Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-embrace-prbaej-60844-deployment/amplify-cfn-templates/hosting/template.json",
+        "logicalId": "hostingS3AndCloudFront"
+      },
+      "lastPushDirHash": "uDELPNswOT6QV//OEQkDurCBKm4="
+    }
+  },
+  "auth": {
+    "embrace2eba999a": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "output": {
+        "AppClientSecret": "ekg78md0eqvatu55d7fc9fammo00pukhekkmahu0486b7vbg1g",
+        "UserPoolId": "ap-southeast-2_w4NFcsdTB",
+        "AppClientIDWeb": "5banncinnk7mhflvanqp6kaesj",
+        "AppClientID": "r4r6brvbahucrvgb9i1h4k9lm",
+        "IdentityPoolId": "ap-southeast-2:f6e79cdc-99fa-4201-b675-89affcee3700",
+        "IdentityPoolName": "embrace2eba999a_identitypool_2eba999a__prbaej",
+        "UserPoolName": "embrace2eba999a_userpool_2eba999a"
+      },
+      "lastPushTimeStamp": "2020-06-17T06:49:46.532Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-embrace-prbaej-60844-deployment/amplify-cfn-templates/auth/embrace2eba999a-cloudformation-template.yml",
+        "logicalId": "authembrace2eba999a"
+      },
+      "lastPushDirHash": "CUnOEUCdV8KUCfq5sdGfiCXpdOk="
+    }
+  },
+  "api": {
+    "embrace": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "API_KEY",
+              "apiKeyConfig": {
+                "description": "embracedefault",
+                "apiKeyExpirationDays": "365"
+              }
+            }
+          ],
+          "defaultAuthentication": {
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authembrace2eba999a"
+            }
+          }
+        },
+        "GraphQLAPIIdOutput": "ozbcjovbanftfjz4bvuwybnv2e",
+        "GraphQLAPIEndpointOutput": "https://4a2ferkjx5ff5ermv7oaanok7a.appsync-api.ap-southeast-2.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-77k3luwybngz5hsff72ocawrae"
+      },
+      "lastPushTimeStamp": "2020-06-17T06:49:46.532Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-embrace-prbaej-60844-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiembrace"
+      },
+      "lastPushDirHash": "M5r/1C42KWBlrJamn5fTTlGAjKA="
+    }
+  },
+  "function": {
+    "embraceESQuery": {
+      "service": "Lambda",
+      "providerPlugin": "awscloudformation",
+      "build": true,
+      "dependsOn": [
+        {
+          "category": "auth",
+          "resourceName": "embrace2eba999a",
+          "attributes": ["UserPoolId"]
+        },
+        {
+          "category": "api",
+          "resourceName": "embrace",
+          "attributes": ["GraphQLAPIIdOutput", "GraphQLAPIEndpointOutput"]
+        }
+      ],
+      "output": {
+        "Region": "ap-southeast-2",
+        "Arn": "arn:aws:lambda:ap-southeast-2:265681005590:function:embraceESQuery-prbaej",
+        "Name": "embraceESQuery-prbaej",
+        "LambdaExecutionRole": "embraceLambdaRoled48767a9-prbaej"
+      },
+      "lastPushTimeStamp": "2020-06-17T06:49:46.532Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-embrace-prbaej-60844-deployment/amplify-cfn-templates/function/embraceESQuery-cloudformation-template.json",
+        "logicalId": "functionembraceESQuery"
+      },
+      "lastBuildTimeStamp": "2020-06-17T06:47:38.357Z",
+      "lastPackageTimeStamp": "2020-06-17T06:47:39.360Z",
+      "distZipFilename": "embraceESQuery-78444e486e4363665a37-build.zip",
+      "lastPushDirHash": "Vi4f4wPT3+Ably25OWnqtv0qO1Y="
+    },
+    "embraceIntervalRpt": {
+      "service": "Lambda",
+      "providerPlugin": "awscloudformation",
+      "build": true,
+      "dependsOn": [
+        {
+          "category": "api",
+          "resourceName": "embrace",
+          "attributes": ["GraphQLAPIIdOutput", "GraphQLAPIEndpointOutput"]
+        }
+      ],
+      "output": {
+        "Region": "ap-southeast-2",
+        "Arn": "arn:aws:lambda:ap-southeast-2:265681005590:function:embraceIntervalRpt-prbaej",
+        "Name": "embraceIntervalRpt-prbaej",
+        "LambdaExecutionRole": "embraceLambdaRoled629d902-prbaej"
+      },
+      "lastPushTimeStamp": "2020-06-17T06:49:46.532Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-embrace-prbaej-60844-deployment/amplify-cfn-templates/function/embraceIntervalRpt-cloudformation-template.json",
+        "logicalId": "functionembraceIntervalRpt"
+      },
+      "lastBuildTimeStamp": "2020-06-17T06:47:38.359Z",
+      "lastPackageTimeStamp": "2020-06-17T06:47:49.059Z",
+      "distZipFilename": "embraceIntervalRpt-374c476679664e615962-build.zip",
+      "lastPushDirHash": "M7OZi5sjLnPD9Chv7DA48f2gJo8="
+    },
+    "embraceCognitoUserCreate": {
+      "service": "Lambda",
+      "providerPlugin": "awscloudformation",
+      "build": true,
+      "dependsOn": [
+        {
+          "category": "auth",
+          "resourceName": "embrace2eba999a",
+          "attributes": ["UserPoolId"]
+        }
+      ],
+      "output": {
+        "Region": "ap-southeast-2",
+        "Arn": "arn:aws:lambda:ap-southeast-2:265681005590:function:embraceCognitoUserCreate-prbaej",
+        "Name": "embraceCognitoUserCreate-prbaej",
+        "LambdaExecutionRole": "embraceLambdaRole3af43d00-prbaej"
+      },
+      "lastPushTimeStamp": "2020-06-17T06:49:46.532Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-embrace-prbaej-60844-deployment/amplify-cfn-templates/function/embraceCognitoUserCreate-cloudformation-template.json",
+        "logicalId": "functionembraceCognitoUserCreate"
+      },
+      "lastBuildTimeStamp": "2020-06-17T06:47:38.423Z",
+      "lastPackageTimeStamp": "2020-06-17T06:47:44.407Z",
+      "distZipFilename": "embraceCognitoUserCreate-4a394d64506178764866-build.zip",
+      "lastPushDirHash": "+12YUSA7n0uAystO4nw1+vMnL4M="
+    },
+    "embraceAuditLog": {
+      "service": "Lambda",
+      "providerPlugin": "awscloudformation",
+      "build": true,
+      "dependsOn": [
+        {
+          "category": "api",
+          "resourceName": "embrace",
+          "attributes": ["GraphQLAPIIdOutput", "GraphQLAPIEndpointOutput"]
+        }
+      ],
+      "output": {
+        "Region": "ap-southeast-2",
+        "Arn": "arn:aws:lambda:ap-southeast-2:265681005590:function:embraceAuditLog-prbaej",
+        "Name": "embraceAuditLog-prbaej",
+        "LambdaExecutionRole": "embraceLambdaRolee1d57605-prbaej"
+      },
+      "lastPushTimeStamp": "2020-06-17T06:49:46.532Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-embrace-prbaej-60844-deployment/amplify-cfn-templates/function/embraceAuditLog-cloudformation-template.json",
+        "logicalId": "functionembraceAuditLog"
+      },
+      "lastBuildTimeStamp": "2020-06-17T06:47:38.432Z",
+      "lastPackageTimeStamp": "2020-06-17T06:47:39.375Z",
+      "distZipFilename": "embraceAuditLog-7468314c756f75334c35-build.zip",
+      "lastPushDirHash": "uZvv07U0Ghb5RO+v/VAB6YE44S0="
+    },
+    "embraceFSM": {
+      "service": "Lambda",
+      "providerPlugin": "awscloudformation",
+      "build": true,
+      "dependsOn": [
+        {
+          "category": "api",
+          "resourceName": "embrace",
+          "attributes": ["GraphQLAPIIdOutput", "GraphQLAPIEndpointOutput"]
+        },
+        {
+          "category": "function",
+          "resourceName": "embraceESQuery",
+          "attributes": ["Name"]
+        }
+      ],
+      "output": {
+        "Region": "ap-southeast-2",
+        "Arn": "arn:aws:lambda:ap-southeast-2:265681005590:function:embraceFSM-prbaej",
+        "Name": "embraceFSM-prbaej",
+        "LambdaExecutionRole": "embraceLambdaRoledb4e586c-prbaej"
+      },
+      "lastPushTimeStamp": "2020-06-17T06:49:46.532Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-embrace-prbaej-60844-deployment/amplify-cfn-templates/function/embraceFSM-cloudformation-template.json",
+        "logicalId": "functionembraceFSM"
+      },
+      "lastBuildTimeStamp": "2020-06-17T06:47:38.433Z",
+      "lastPackageTimeStamp": "2020-06-17T06:47:39.431Z",
+      "distZipFilename": "embraceFSM-3172374d696a55396f66-build.zip",
+      "lastPushDirHash": "0LAe6+O4jh6CfyowcOBek0Rusq4="
+    },
+    "embraceStandupNotifier": {
+      "service": "Lambda",
+      "providerPlugin": "awscloudformation",
+      "build": true,
+      "dependsOn": [
+        {
+          "category": "api",
+          "resourceName": "embrace",
+          "attributes": ["GraphQLAPIIdOutput", "GraphQLAPIEndpointOutput"]
+        }
+      ],
+      "output": {
+        "Region": "ap-southeast-2",
+        "Arn": "arn:aws:lambda:ap-southeast-2:265681005590:function:embraceStandupNotifier-prbaej",
+        "Name": "embraceStandupNotifier-prbaej",
+        "LambdaExecutionRole": "embraceLambdaRoleb0663a27-prbaej"
+      },
+      "lastPushTimeStamp": "2020-06-17T06:49:46.532Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-embrace-prbaej-60844-deployment/amplify-cfn-templates/function/embraceStandupNotifier-cloudformation-template.json",
+        "logicalId": "functionembraceStandupNotifier"
+      },
+      "lastBuildTimeStamp": "2020-06-17T06:47:38.434Z",
+      "lastPackageTimeStamp": "2020-06-17T06:47:39.399Z",
+      "distZipFilename": "embraceStandupNotifier-4e37536d794b394c6863-build.zip",
+      "lastPushDirHash": "j1WsMDNnN8jQ4q6eegwZxZH2Y9I="
+    }
+  },
+  "storage": {
+    "embraceS3Dev": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "BucketName": "embrace-s3-dev60844-prbaej",
+        "Region": "ap-southeast-2"
+      },
+      "lastPushTimeStamp": "2020-06-17T06:49:46.532Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-embrace-prbaej-60844-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+        "logicalId": "storageembraceS3Dev"
+      },
+      "lastPushDirHash": "iWbz6PcMNl4g5ngYuRrK7WYfRWc="
+    }
+  }
+}

@@ -1,0 +1,79 @@
+# useFormAutocompleteSearch
+
+<Meta title="hooks/useFormAutocompleteSearch" />
+
+## Usage
+
+```jsx
+import React from 'react';
+import FormAutocomplete from 'components-v2/molecules/form/FormAutocomplete';
+import { QUERY_KEYS } from 'common/graphql-api/constants';
+import { searchUsers } from 'common/graphql-api/queries/user/searchUsers';
+import { useFormAutocompleteSearch } from '../useFormAutocompleteSearch';
+
+export const SearchUsers = ({ form, name = 'user', ...props }) => {
+  const { bind } = useFormAutocompleteSearch({
+    /**
+     * react hook form
+     */
+    form,
+    /**
+     * name that will be used on react hook form control
+     */
+    name,
+    /**
+     * can be any query keys based on react query guidelines
+     * but you should use the QUERY_KEYS generator here
+     * import { QUERY_KEYS } from 'common/graphql-api/constants';
+     */
+    queryKey: QUERY_KEYS.member.search,
+    /**
+     * label per option same as with the useAutocompleteSearch hook on material ui
+     */
+    getOptionLabel: item => item.fullname,
+    /**
+     * can be any function that returns an array
+     * you can use the searchText and ids as values passed on your queryFn
+     */
+    queryFn: async ({ queryKey }) => {
+      const [{ searchText, ids }] = queryKey;
+      const result = await searchUsers({ searchText, ids });
+      return result?.items;
+    },
+  });
+
+  return (
+    <FormAutocomplete
+      textFieldProps={{
+        label: 'Team Members',
+        placeholder: 'Search team member',
+      }}
+      {...bind}
+      {...props}
+    />
+  );
+};
+```
+
+## Reference
+
+```ts
+useFormAutocompleteSearch({
+  form: ReactHookForm,
+  name: string,
+  queryKey: ReactQueryKeys,
+  getOptionLabel: (item: unknown) => string,
+  queryFn: () => Promise<unknown[]>,
+});
+
+returns {
+  bind: {
+    name: any;
+    control: any;
+    options: any;
+    loading: boolean;
+    filterOptions: (x: any) => any;
+    onInputChange: DebouncedFunc<(event: any, newInputValue: any, reason: any) => void>;
+  }
+}
+```

@@ -1,0 +1,31 @@
+[
+  {
+    "__typename": "UserGroup",
+    "id": "admin",
+    "name": "Admin",
+    "permissions": ["admin"]
+  },
+  {
+    "__typename": "User",
+    "children": "NA",
+    "createdAt": "2020-02-09T22:49:46.829Z",
+    "dobDate": "1994-02-03T00:00:00.000Z",
+    "email": "admin@moretonblue.com",
+    "employeeType": "Permanent",
+    "firstName": "MB",
+    "fullname": "MB Admin",
+    "group": "admin",
+    "hireDate": "2019-04-01T00:00:00.000Z",
+    "homePhone": "NA",
+    "id": "mb-admin",
+    "mobile": "09053632632",
+    "spouse": "NA",
+    "startDate": "2019-04-01",
+    "status": "Active",
+    "surname": "Admin",
+    "teamList": ["Admin"],
+    "teamType": "Admin",
+    "updatedAt": "2020-12-10T03:55:27.799Z",
+    "updatedBy": "5cda30d0-90e1-44f1-9a6e-af0869f70b51"
+  }
+]

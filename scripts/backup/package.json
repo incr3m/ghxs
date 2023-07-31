@@ -1,0 +1,12 @@
+{
+  "name": "backup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-appsync": "^3.181.0",
+    "@aws-sdk/client-dynamodb": "^3.181.0",
+    "bluebird": "^3.7.2",
+    "lodash": "^4.17.21"
+  }
+}

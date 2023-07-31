@@ -1,0 +1,2400 @@
+[
+  {
+    "__typename": "Setting",
+    "createdAt": "2021-10-18T01:10:53.356Z",
+    "code": "appointedCompetentPerson",
+    "id": "appointedCompetentPerson",
+    "updatedAt": "2021-10-18T01:10:53.356Z"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "type": "client, partner, supplier, competitor",
+      "sector": "agribusiness, assetAndWealthManagement, bankingAndCapitalMarkets, constructionAndTransportation, defence, education, energy, entertainmentAndMedia, financialServices, government, healthcare, infrastructure, insurance, mining, powerAndUtilities, professionalServices,realEstate, retailAndConsumer, superannuation, technology",
+      "status": "active, prospect, evaluating, dormant"
+    },
+    "code": "company-setting",
+    "updatedAt": "2020-10-07T23:14:08.291Z",
+    "createdAt": "2020-02-28T03:55:23.695Z",
+    "module": "company",
+    "id": "company-setting"
+  },
+  {
+    "__typename": "Setting",
+    "value": {},
+    "code": "integration-setting",
+    "updatedAt": "2021-06-21T02:12:56.039Z",
+    "createdAt": "2021-03-04T02:46:12.084Z",
+    "module": "core",
+    "id": "integration-setting"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "defaultAcctCode": "429",
+      "taxRates": [
+        {
+          "Status": "ACTIVE",
+          "TaxType": "BASEXCLUDED",
+          "CanApplyToExpenses": true,
+          "CanApplyToAssets": true,
+          "CanApplyToLiabilities": true,
+          "TaxComponents": [
+            {
+              "IsNonRecoverable": false,
+              "IsCompound": false,
+              "Rate": 0,
+              "Name": "GST"
+            }
+          ],
+          "DisplayTaxRate": 0,
+          "EffectiveRate": 0,
+          "ReportTaxType": "BASEXCLUDED",
+          "CanApplyToEquity": true,
+          "Name": "BAS Excluded",
+          "CanApplyToRevenue": true
+        },
+        {
+          "Status": "ARCHIVED",
+          "TaxType": "EXEMPTCAPITAL",
+          "CanApplyToExpenses": true,
+          "CanApplyToAssets": true,
+          "CanApplyToLiabilities": true,
+          "TaxComponents": [
+            {
+              "IsNonRecoverable": false,
+              "IsCompound": false,
+              "Rate": 0,
+              "Name": "GST"
+            }
+          ],
+          "DisplayTaxRate": 0,
+          "EffectiveRate": 0,
+          "ReportTaxType": "EXEMPTCAPITAL",
+          "CanApplyToEquity": true,
+          "Name": "GST Free Capital",
+          "CanApplyToRevenue": false
+        },
+        {
+          "Status": "ACTIVE",
+          "TaxType": "EXEMPTEXPENSES",
+          "CanApplyToExpenses": true,
+          "CanApplyToAssets": true,
+          "CanApplyToLiabilities": true,
+          "TaxComponents": [
+            {
+              "IsNonRecoverable": false,
+              "IsCompound": false,
+              "Rate": 0,
+              "Name": "GST"
+            }
+          ],
+          "DisplayTaxRate": 0,
+          "EffectiveRate": 0,
+          "ReportTaxType": "EXEMPTEXPENSES",
+          "CanApplyToEquity": true,
+          "Name": "GST Free Expenses",
+          "CanApplyToRevenue": false
+        },
+        {
+          "Status": "ARCHIVED",
+          "TaxType": "EXEMPTEXPORT",
+          "CanApplyToExpenses": false,
+          "CanApplyToAssets": true,
+          "CanApplyToLiabilities": true,
+          "TaxComponents": [
+            {
+              "IsNonRecoverable": false,
+              "IsCompound": false,
+              "Rate": 0,
+              "Name": "GST"
+            }
+          ],
+          "DisplayTaxRate": 0,
+          "EffectiveRate": 0,
+          "ReportTaxType": "EXEMPTEXPORT",
+          "CanApplyToEquity": true,
+          "Name": "GST Free Exports",
+          "CanApplyToRevenue": true
+        },
+        {
+          "Status": "ACTIVE",
+          "TaxType": "EXEMPTOUTPUT",
+          "CanApplyToExpenses": false,
+          "CanApplyToAssets": true,
+          "CanApplyToLiabilities": true,
+          "TaxComponents": [
+            {
+              "IsNonRecoverable": false,
+              "IsCompound": false,
+              "Rate": 0,
+              "Name": "GST"
+            }
+          ],
+          "DisplayTaxRate": 0,
+          "EffectiveRate": 0,
+          "ReportTaxType": "EXEMPTOUTPUT",
+          "CanApplyToEquity": true,
+          "Name": "GST Free Income",
+          "CanApplyToRevenue": true
+        },
+        {
+          "Status": "ARCHIVED",
+          "TaxType": "CAPEXINPUT",
+          "CanApplyToExpenses": true,
+          "CanApplyToAssets": true,
+          "CanApplyToLiabilities": true,
+          "TaxComponents": [
+            {
+              "IsNonRecoverable": false,
+              "IsCompound": false,
+              "Rate": 10,
+              "Name": "GST"
+            }
+          ],
+          "DisplayTaxRate": 10,
+          "EffectiveRate": 10,
+          "ReportTaxType": "CAPITALEXPENSESINPUT",
+          "CanApplyToEquity": true,
+          "Name": "GST on Capital",
+          "CanApplyToRevenue": false
+        },
+        {
+          "Status": "ARCHIVED",
+          "TaxType": "GSTONCAPIMPORTS",
+          "CanApplyToExpenses": false,
+          "CanApplyToAssets": false,
+          "CanApplyToLiabilities": true,
+          "TaxComponents": [
+            {
+              "IsNonRecoverable": false,
+              "IsCompound": false,
+              "Rate": 0,
+              "Name": "Capital Imports GST"
+            }
+          ],
+          "DisplayTaxRate": 0,
+          "EffectiveRate": 0,
+          "ReportTaxType": "GSTONCAPITALIMPORTS",
+          "CanApplyToEquity": false,
+          "Name": "GST on Capital Imports",
+          "CanApplyToRevenue": false
+        },
+        {
+          "Status": "ACTIVE",
+          "TaxType": "INPUT",
+          "CanApplyToExpenses": true,
+          "CanApplyToAssets": true,
+          "CanApplyToLiabilities": true,
+          "TaxComponents": [
+            {
+              "IsNonRecoverable": false,
+              "IsCompound": false,
+              "Rate": 10,
+              "Name": "GST"
+            }
+          ],
+          "DisplayTaxRate": 10,
+          "EffectiveRate": 10,
+          "ReportTaxType": "INPUT",
+          "CanApplyToEquity": true,
+          "Name": "GST on Expenses",
+          "CanApplyToRevenue": false
+        },
+        {
+          "Status": "ACTIVE",
+          "TaxType": "GSTONIMPORTS",
+          "CanApplyToExpenses": false,
+          "CanApplyToAssets": false,
+          "CanApplyToLiabilities": true,
+          "TaxComponents": [
+            {
+              "IsNonRecoverable": false,
+              "IsCompound": false,
+              "Rate": 0,
+              "Name": "GST"
+            }
+          ],
+          "DisplayTaxRate": 0,
+          "EffectiveRate": 0,
+          "ReportTaxType": "GSTONIMPORTS",
+          "CanApplyToEquity": false,
+          "Name": "GST on Imports",
+          "CanApplyToRevenue": false
+        },
+        {
+          "Status": "ACTIVE",
+          "TaxType": "OUTPUT",
+          "CanApplyToExpenses": false,
+          "CanApplyToAssets": true,
+          "CanApplyToLiabilities": true,
+          "TaxComponents": [
+            {
+              "IsNonRecoverable": false,
+              "IsCompound": false,
+              "Rate": 10,
+              "Name": "GST"
+            }
+          ],
+          "DisplayTaxRate": 10,
+          "EffectiveRate": 10,
+          "ReportTaxType": "OUTPUT",
+          "CanApplyToEquity": true,
+          "Name": "GST on Income",
+          "CanApplyToRevenue": true
+        },
+        {
+          "Status": "ARCHIVED",
+          "TaxType": "INPUTTAXED",
+          "CanApplyToExpenses": true,
+          "CanApplyToAssets": true,
+          "CanApplyToLiabilities": true,
+          "TaxComponents": [
+            {
+              "IsNonRecoverable": false,
+              "IsCompound": false,
+              "Rate": 0,
+              "Name": "GST"
+            }
+          ],
+          "DisplayTaxRate": 0,
+          "EffectiveRate": 0,
+          "ReportTaxType": "INPUTTAXED",
+          "CanApplyToEquity": true,
+          "Name": "Input Taxed",
+          "CanApplyToRevenue": true
+        }
+      ],
+      "accounts": [
+        {
+          "Status": "ACTIVE",
+          "AccountID": "e1bc15ca-de79-4ae1-804a-272f155edee6",
+          "Description": "Income from any normal business activity",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "200",
+          "Name": "Sales",
+          "TaxType": "OUTPUT",
+          "EnablePaymentsToAccount": false,
+          "Type": "REVENUE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "REVENUE",
+          "ReportingCode": "REV.TRA.GOO",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "d7f9c325-844a-4ca8-abf1-ce3fc7e7bbb4",
+          "Description": "Any other income that does not relate to normal business activities and is not recurring",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "260",
+          "Name": "Other Revenue",
+          "TaxType": "OUTPUT",
+          "EnablePaymentsToAccount": false,
+          "Type": "REVENUE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "REVENUE",
+          "ReportingCode": "REV.OTH",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "af79e05a-fca2-4865-a567-f80262ec97c4",
+          "Description": "Interest income",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "270",
+          "Name": "Interest Income",
+          "TaxType": "EXEMPTOUTPUT",
+          "EnablePaymentsToAccount": false,
+          "Type": "REVENUE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "REVENUE",
+          "ReportingCode": "REV",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "dbe56f84-1466-4dbc-b0d8-6305639e41db",
+          "Description": "Cost of goods sold by the business",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "310",
+          "Name": "Cost of Goods Sold",
+          "ReportingCodeName": "Cost of Goods Sold",
+          "TaxType": "INPUT",
+          "EnablePaymentsToAccount": false,
+          "Type": "DIRECTCOSTS",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP.COS",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "bd86e90a-fe80-4a67-beef-823d52e5efa7",
+          "Description": "Expenses incurred for advertising while trying to increase sales",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "400",
+          "Name": "Advertising",
+          "TaxType": "INPUT",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "0838f636-ef17-4f0b-9735-ab8e2ec07bd5",
+          "Description": "Fees charged by your bank for transactions regarding your bank account(s).",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "404",
+          "Name": "Bank Fees",
+          "TaxType": "EXEMPTEXPENSES",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP.INT",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "3b536a57-3090-46a1-b129-a3bfa45476b7",
+          "Description": "Expenses incurred for cleaning business property.",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "408",
+          "Name": "Cleaning",
+          "TaxType": "INPUT",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "88d23f41-58db-4526-a4b5-663dff8a3c92",
+          "Description": "Expenses related to paying consultants",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "412",
+          "Name": "Consulting & Accounting",
+          "TaxType": "INPUT",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "f3338917-4f03-435a-8a2f-156ee4523909",
+          "Description": "The amount of the asset's cost (based on the useful life) that was consumed during the period",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "416",
+          "Name": "Depreciation",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP.DEP",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "eae9f9a7-a71f-41ad-a7bc-3644f4e85eb9",
+          "Description": "Expenses paid by company for the business but are not deductable for income tax purposes.",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "420",
+          "Name": "Entertainment",
+          "TaxType": "EXEMPTEXPENSES",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "21ee43cf-d6f3-4929-901c-f78dfa29e2da",
+          "Description": "Expenses incurred on courier & freight costs",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "425",
+          "Name": "Freight & Courier",
+          "TaxType": "INPUT",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "07943c91-13b4-4781-a093-64381c82e32c",
+          "Description": "General expenses related to the running of the business.",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "429",
+          "Name": "General Expenses",
+          "TaxType": "INPUT",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "6b20bc6c-d340-41d3-b07d-7a27ef7bb3d2",
+          "Description": "Expenses incurred for insuring the business' assets",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "433",
+          "Name": "Insurance",
+          "TaxType": "INPUT",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "61034664-b51a-45a4-a6d5-7d9e70d20321",
+          "Description": "Any interest expenses paid to ATO, business bank accounts or credit card accounts.",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "437",
+          "Name": "Interest Expense",
+          "TaxType": "EXEMPTEXPENSES",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP.INT",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "cfb361f0-e954-4d80-9806-54e2fbe98a7f",
+          "Description": "Expenses incurred on any legal matters",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "441",
+          "Name": "Legal expenses",
+          "TaxType": "INPUT",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "f75b8fff-25dc-4d71-892c-78314f00721c",
+          "Description": "Expenses incurred for lighting, powering or heating the premises",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "445",
+          "Name": "Light, Power, Heating",
+          "TaxType": "INPUT",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "2ffaf501-48bf-455c-96d0-31e74a18a8a8",
+          "Description": "Expenses incurred on the running of company motor vehicles",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "449",
+          "Name": "Motor Vehicle Expenses",
+          "TaxType": "INPUT",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP.VEH",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "418372e6-505f-4015-9ea6-bcf1dcb12ba3",
+          "Description": "General expenses related to the running of the business office.",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "453",
+          "Name": "Office Expenses",
+          "TaxType": "INPUT",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "12700801-9fb5-4d0d-b2b7-197f84164d8f",
+          "Description": "Expenses incurred by the entity as a result of printing and stationery",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "461",
+          "Name": "Printing & Stationery",
+          "TaxType": "INPUT",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "145b9e60-c189-44c6-ac80-8c9617cfe6b5",
+          "Description": "The payment to lease a building or area.",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "469",
+          "Name": "Rent",
+          "TaxType": "INPUT",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP.REN",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "bbba8deb-029d-4187-aa51-9b33b2f307cd",
+          "Description": "Expenses incurred on a damaged or run down asset that will bring the asset back to its original condition.",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "473",
+          "Name": "Repairs and Maintenance",
+          "ReportingCodeName": "Expense",
+          "TaxType": "INPUT",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "1f06c424-1b61-45ab-8a07-4727fedb0912",
+          "Description": "Payment to employees in exchange for their resources",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "477",
+          "Name": "Wages and Salaries",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP.EMP.WAG",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "89c047b6-80ab-47af-becd-a388cd14c6dd",
+          "Description": "Superannuation contributions",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "478",
+          "Name": "Superannuation",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP.EMP.SUP",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "cbb99b31-a785-4fc1-9595-0f043b77665a",
+          "Description": "E.g. Magazines, professional bodies.",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "485",
+          "Name": "Subscriptions",
+          "TaxType": "INPUT",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "5a4552c9-d0a4-495f-b81e-2e56b3781472",
+          "Description": "Expenditure incurred from any business-related phone calls, phone lines, or internet connections",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "489",
+          "Name": "Telephone & Internet",
+          "TaxType": "INPUT",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "926c7e00-6e70-4c8f-a91f-245feca3aabb",
+          "Description": "Expenses incurred from domestic travel which has a business purpose",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "493",
+          "Name": "Travel - National",
+          "TaxType": "INPUT",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP.TRA.NAT",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "4c482772-2b6e-46a7-8ed9-40ee4d27c24c",
+          "Description": "Expenses incurred from international travel which has a business purpose",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "494",
+          "Name": "Travel - International",
+          "TaxType": "EXEMPTEXPENSES",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP.TRA.INT",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "3e349807-3e3c-4bd2-8027-555742310e05",
+          "Description": "Bank account revaluations due for foreign exchange rate changes",
+          "UpdatedDateUTC": "/Date(1634000655647+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "497",
+          "Name": "Bank Revaluations",
+          "ReportingCodeName": "Foreign currency gains/losses",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP.FOR",
+          "SystemAccount": "BANKCURRENCYGAIN"
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "03af372f-2b13-4ccd-8c1f-b3b4dcc98e3d",
+          "Description": "Unrealised currency gains on outstanding items",
+          "UpdatedDateUTC": "/Date(1634000655647+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "498",
+          "Name": "Unrealised Currency Gains",
+          "ReportingCodeName": "Unrealised foreign currency gains and losses",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP.FOR.UGL",
+          "SystemAccount": "UNREALISEDCURRENCYGAIN"
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "d4054d5e-6deb-4845-ac42-1374b8560f62",
+          "Description": "Gains or losses made due to currency exchange rate changes",
+          "UpdatedDateUTC": "/Date(1634000655647+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "499",
+          "Name": "Realised Currency Gains",
+          "ReportingCodeName": "Realised foreign currency gains and losses",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP.FOR.RGL",
+          "SystemAccount": "REALISEDCURRENCYGAIN"
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "8361b291-fb27-4207-bb5c-29924cf3e8b2",
+          "Description": "A percentage of total earnings paid to the government.",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "505",
+          "Name": "Income Tax Expense",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": false,
+          "Type": "EXPENSE",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EXPENSE",
+          "ReportingCode": "EXP.INC",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "69c25b4f-703e-4003-827c-f4adb8f1cd25",
+          "Description": "Outstanding invoices the company has issued out to the client but has not yet received in cash at balance date.",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "610",
+          "Name": "Accounts Receivable",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": false,
+          "Type": "CURRENT",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "ASSET",
+          "ReportingCode": "ASS.CUR.REC.TRA",
+          "SystemAccount": "DEBTORS"
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "10df6294-8955-48a8-a343-e4f4c3d96cac",
+          "Description": "An expenditure that has been paid for in advance.",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "620",
+          "Name": "Prepayments",
+          "ReportingCodeName": "Prepayments",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": false,
+          "Type": "CURRENT",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "ASSET",
+          "ReportingCode": "ASS.CUR.REC.PRE",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "2c8a57c5-8682-40b3-bfdb-ec8b42219f36",
+          "Description": "Value of tracked items for resale.",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "630",
+          "Name": "Inventory",
+          "ReportingCodeName": "Inventory",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": false,
+          "Type": "INVENTORY",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "ASSET",
+          "ReportingCode": "ASS.CUR.INY",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "b7ff9714-25d7-4789-8da5-2bd77a7890a9",
+          "Description": "Office equipment that is owned and controlled by the business",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "710",
+          "Name": "Office Equipment",
+          "TaxType": "INPUT",
+          "EnablePaymentsToAccount": false,
+          "Type": "FIXED",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "ASSET",
+          "ReportingCode": "ASS.NCA.FIX.PLA",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "5558a09b-486c-4968-8e82-716c4b692b03",
+          "Description": "The total amount of office equipment cost that has been consumed by the entity (based on the useful life)",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "711",
+          "Name": "Less Accumulated Depreciation on Office Equipment",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": false,
+          "Type": "FIXED",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "ASSET",
+          "ReportingCode": "ASS.NCA.FIX.PLA.ACC",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "7d6c5e05-76eb-47df-9184-a99964284d0f",
+          "Description": "Computer equipment that is owned and controlled by the business",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "720",
+          "Name": "Computer Equipment",
+          "TaxType": "INPUT",
+          "EnablePaymentsToAccount": false,
+          "Type": "FIXED",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "ASSET",
+          "ReportingCode": "ASS.NCA.FIX.PLA",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "42bb0ca4-4a83-47ef-8334-ce6e53d97688",
+          "Description": "The total amount of computer equipment cost that has been consumed by the business (based on the useful life)",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "721",
+          "Name": "Less Accumulated Depreciation on Computer Equipment",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": false,
+          "Type": "FIXED",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "ASSET",
+          "ReportingCode": "ASS.NCA.FIX.PLA.ACC",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "e19c6760-b68d-4872-af05-420030d7e132",
+          "Description": "Outstanding invoices the company has received from suppliers but has not yet paid at balance date",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "800",
+          "Name": "Accounts Payable",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": false,
+          "Type": "CURRLIAB",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "LIABILITY",
+          "ReportingCode": "LIA.CUR.PAY.TRA",
+          "SystemAccount": "CREDITORS"
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "5aabb0ae-2991-4730-b219-148612c03ee0",
+          "Description": "Expense claims typically made by employees/shareholder employees still outstanding.",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "801",
+          "Name": "Unpaid Expense Claims",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": false,
+          "Type": "CURRLIAB",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "LIABILITY",
+          "ReportingCode": "LIA.CUR.PAY.EMP",
+          "SystemAccount": "UNPAIDEXPCLM"
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "305745ab-661e-4396-bf97-b82a8dfd3e35",
+          "Description": "Where this account is set as the nominated Wages Payable account within Payroll Settings, Xero allocates the net wage amount of each pay run created using Payroll to this account",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "804",
+          "Name": "Wages Payable - Payroll",
+          "ReportingCodeName": "Liabilities",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": false,
+          "Type": "CURRLIAB",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "LIABILITY",
+          "ReportingCode": "LIA.CUR.PAY.EMP"
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "9cf79b28-b004-47c7-b46c-94d0633561ee",
+          "Description": "The balance in this account represents GST owing to or from the ATO. At the end of the GST period, it is this account that should be used to code against either the 'refunds from' or 'payments to' the ATO that will appear on the bank statement. Xero has been designed to use only one GST account to track GST on income and expenses, so there is no need to add any new GST accounts to Xero.",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "820",
+          "Name": "GST",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": false,
+          "Type": "CURRLIAB",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "LIABILITY",
+          "ReportingCode": "LIA.CUR.TAX.GST",
+          "SystemAccount": "GST"
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "3c74f9d0-dfaa-4fa3-b880-5eba3908f626",
+          "Description": "The amount of PAYE tax that is due to be paid",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "825",
+          "Name": "PAYG Withholdings Payable",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": false,
+          "Type": "CURRLIAB",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "LIABILITY",
+          "ReportingCode": "LIA.CUR.PAY.PAY",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "0359c3e2-58c4-4def-aac6-a45b7ca810c0",
+          "Description": "The amount of superannuation that is due to be paid",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "826",
+          "Name": "Superannuation Payable",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": false,
+          "Type": "CURRLIAB",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "LIABILITY",
+          "ReportingCode": "LIA.CUR.PAY.EMP",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "ae8f7458-941f-4764-be19-c78230f6e5c4",
+          "Description": "The amount of income tax that is due to be paid, also resident withholding tax paid on interest received.",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "830",
+          "Name": "Income Tax Payable",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": false,
+          "Type": "CURRLIAB",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "LIABILITY",
+          "ReportingCode": "LIA.CUR.TAX.INC",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "96d45182-153c-496c-86b4-52ff92a5e4b8",
+          "Description": "For accountant adjustments",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "840",
+          "Name": "Historical Adjustment",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": false,
+          "Type": "CURRLIAB",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "LIABILITY",
+          "ReportingCode": "LIA.CUR",
+          "SystemAccount": "HISTORICAL"
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "89df1238-8825-4b57-bc20-52aa4d139f5c",
+          "Description": "An entry that allows an unknown transaction to be entered, so the accounts can still be worked on in balance and the entry can be dealt with later.",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "850",
+          "Name": "Suspense",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": false,
+          "Type": "CURRLIAB",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "LIABILITY",
+          "ReportingCode": "LIA.CUR",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "ab7724d0-9723-444b-963d-b808cde63a71",
+          "Description": "An adjustment entry to allow for rounding",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "860",
+          "Name": "Rounding",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": false,
+          "Type": "CURRLIAB",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "LIABILITY",
+          "ReportingCode": "LIA.CUR",
+          "SystemAccount": "ROUNDING"
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "4db2aaa1-c0b6-409f-87df-a130aa481d07",
+          "Description": "Transfers between tracking categories",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "877",
+          "Name": "Tracking Transfers",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": false,
+          "Type": "CURRLIAB",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "LIABILITY",
+          "ReportingCode": "LIA.CUR",
+          "SystemAccount": "TRACKINGTRANSFERS"
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "8ae191e8-0116-47ac-ac6c-22121f894baf",
+          "Description": "Withdrawals by the owners",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "880",
+          "Name": "Owner A Drawings",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": true,
+          "Type": "CURRLIAB",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "LIABILITY",
+          "ReportingCode": "LIA.NCL.ADV",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "5f629b97-8f89-4fa3-bcc3-0716166030c1",
+          "Description": "Funds contributed by the owner",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "881",
+          "Name": "Owner A Funds Introduced",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": true,
+          "Type": "CURRLIAB",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "LIABILITY",
+          "ReportingCode": "LIA.NCL.ADV",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "59d1e34b-fb6a-452e-af98-4cb6057b058f",
+          "Description": "Money that has been borrowed from a creditor",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "900",
+          "Name": "Loan",
+          "ReportingCodeName": "Loans",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": false,
+          "Type": "TERMLIAB",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "LIABILITY",
+          "ReportingCode": "LIA.NCL.LOA",
+          "SystemAccount": ""
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "ff1791a1-a4ae-42ae-b16c-4717b41bc751",
+          "Description": "Do not Use",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "960",
+          "Name": "Retained Earnings",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": false,
+          "Type": "EQUITY",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EQUITY",
+          "ReportingCode": "EQU.RET",
+          "SystemAccount": "RETAINEDEARNINGS"
+        },
+        {
+          "Status": "ACTIVE",
+          "AccountID": "ec746ccd-bbf9-4b22-9805-73c100faca8c",
+          "Description": "The value of shares purchased by the shareholders",
+          "UpdatedDateUTC": "/Date(1633569559090+0000)/",
+          "ShowInExpenseClaims": false,
+          "HasAttachments": false,
+          "Code": "970",
+          "Name": "Owner A Share Capital",
+          "TaxType": "BASEXCLUDED",
+          "EnablePaymentsToAccount": true,
+          "Type": "EQUITY",
+          "BankAccountType": "",
+          "AddToWatchlist": false,
+          "Class": "EQUITY",
+          "ReportingCode": "EQU.SHA.ORD",
+          "SystemAccount": ""
+        }
+      ]
+    },
+    "code": "integration-xero-setting",
+    "updatedAt": "2021-10-15T07:19:43.487Z",
+    "createdAt": "2021-10-12T07:00:06.293Z",
+    "module": "core",
+    "id": "integration-xero-setting"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "url": "https://www.notion.so/moretonblue/d21b9e4921684f1a853620d177d9ccdb?v=46ba3b32f16e482097ad2f36eaa8e486"
+    },
+    "code": "knowledgebase-setting",
+    "updatedAt": "2021-10-21T05:53:50.881Z",
+    "createdAt": "2021-10-21T05:53:50.881Z",
+    "id": "knowledgebase-setting",
+    "name": "Knowledgebase Settings"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "items": [
+        {
+          "archived": false,
+          "id": "da106066-73aa-4c2e-8669-8254f1dd1bea",
+          "text": "Philippines"
+        },
+        {
+          "archived": false,
+          "id": "b65ec07e-1f32-4247-8fce-eff988300f1b",
+          "text": "Brisbane"
+        },
+        {
+          "archived": false,
+          "id": "ad40a6f5-8e96-4258-8c0b-429d4759d7fc",
+          "text": "Queensland"
+        },
+        {
+          "archived": false,
+          "id": "39b29575-1686-44e0-9d20-1a4fb7a039cc",
+          "text": "New South Wales"
+        },
+        {
+          "archived": false,
+          "id": "ed69e178-a9c7-4497-8251-85f99fa92cc3",
+          "text": "Australian Capital Territory"
+        },
+        {
+          "archived": false,
+          "id": "c609ccd0-48b2-47dd-b412-e74a7f39176d",
+          "text": "Northern Territory"
+        },
+        {
+          "archived": false,
+          "id": "9e48c21f-7881-4ee2-9b84-30a04d575ddb",
+          "text": "Western Australia"
+        },
+        {
+          "archived": false,
+          "id": "cef97562-d734-4332-bb85-dd666209c4c4",
+          "text": "Tasmania"
+        },
+        {
+          "archived": false,
+          "id": "22fbf2a1-611e-43cd-b8d7-49f0bb16cb06",
+          "text": "Victoria"
+        }
+      ]
+    },
+    "code": "kwCompanyOfficeList",
+    "updatedAt": "2021-11-04T00:12:18.059Z",
+    "createdAt": "2021-01-14T01:00:30.529Z",
+    "module": "CRM",
+    "description": "Company Offices",
+    "id": "kwCompanyOfficeList",
+    "name": "Company Offices"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "items": [
+        {
+          "archived": false,
+          "id": "aa4a53e6-4e05-4372-9fe2-7ef658388e0c",
+          "text": "Agribusiness"
+        },
+        {
+          "archived": false,
+          "id": "cfc60b95-88b7-479e-8303-6cd2b63c8438",
+          "text": "Asset and Wealth Management"
+        },
+        {
+          "archived": false,
+          "id": "86cb6ecc-8568-46d8-bdaf-6cfd3e710efa",
+          "text": "Banking and Capital Markets"
+        },
+        {
+          "archived": false,
+          "id": "36fb1879-355e-461f-991c-981a2b22a7d9",
+          "text": "Beauty",
+          "sortOrder": null
+        },
+        {
+          "archived": false,
+          "id": "5b10efb7-0216-455c-99a4-1900dced0d71",
+          "text": "Construction and Transportation"
+        },
+        {
+          "archived": false,
+          "id": "6c191f7e-e3c7-4af3-9b5c-3e37ed6bb05a",
+          "text": "Beauty",
+          "sortOrder": null
+        },
+        {
+          "archived": false,
+          "id": "63a54d05-7121-4a63-ad82-d73b5d1239cc",
+          "text": "Defence"
+        },
+        {
+          "archived": false,
+          "id": "295a347e-85fd-47ee-999d-05724cddec63",
+          "text": "Education"
+        },
+        {
+          "archived": false,
+          "id": "a7585dd9-9b7d-48e1-ba6e-7d5e9f61de82",
+          "text": "Energy"
+        },
+        {
+          "archived": false,
+          "id": "f2fec10e-5ee8-4e41-b598-7637b0d95a24",
+          "text": "Entertainment and Media"
+        },
+        {
+          "archived": false,
+          "id": "25ef27ec-512d-454c-a6ff-24529cf385f7",
+          "text": "Financial Services"
+        },
+        {
+          "archived": false,
+          "id": "f69b75c9-d7e0-45c7-bbfb-00669767c868",
+          "text": "Government"
+        },
+        {
+          "archived": false,
+          "id": "325bbfe4-e245-4180-8d49-ae87b6f31971",
+          "text": "Health Care"
+        },
+        {
+          "archived": false,
+          "id": "23eb7f5a-d893-4053-91c5-4df3103703cc",
+          "text": "Infastructure"
+        },
+        {
+          "archived": false,
+          "id": "8477ccab-44d7-4a29-ba6f-c308c4054bbb",
+          "text": "Information Technology",
+          "sortOrder": null
+        },
+        {
+          "archived": false,
+          "id": "fcd4b0cc-b8dd-4650-9d92-9453e4980152",
+          "text": "Insurance"
+        },
+        {
+          "archived": false,
+          "id": "8789792a-92a8-42ca-8e74-d1b83d2649f8",
+          "text": "Marketing",
+          "sortOrder": null
+        },
+        {
+          "archived": false,
+          "id": "a0953f33-931a-47e6-adf2-71cf3c2ab5a8",
+          "text": "Mining"
+        },
+        {
+          "archived": false,
+          "id": "baaa4876-9d4c-4bc5-9890-9297ff03b35d",
+          "text": "Power and Utilities"
+        },
+        {
+          "archived": false,
+          "id": "e7445fca-cef7-4e18-be89-0837206cfb05",
+          "text": "Professional Service"
+        },
+        {
+          "archived": false,
+          "id": "f68768a2-d4ce-4346-ad60-a8a321b8424d",
+          "text": "Real Estate"
+        },
+        {
+          "archived": false,
+          "id": "53d15b6f-773c-4a45-b68c-e8e90d38c439",
+          "text": "Retail and Consumer"
+        },
+        {
+          "archived": false,
+          "id": "54c538da-f9ec-4dbd-99d7-f4fca3c39de9",
+          "text": "Superannuation"
+        }
+      ]
+    },
+    "code": "kwCompanySectorList",
+    "updatedAt": "2022-01-11T06:04:26.520Z",
+    "createdAt": "2021-01-14T00:29:28.320Z",
+    "description": "Company Sectors",
+    "id": "kwCompanySectorList",
+    "module": "CRM",
+    "name": "Company Sectors"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "items": [
+        {
+          "archived": false,
+          "id": "b87e399c-e3e0-408c-9f82-c1b8685ceaee",
+          "text": "active"
+        },
+        {
+          "archived": false,
+          "id": "941c28bf-7adb-41f2-b906-c3c111e642ba",
+          "text": "dormant"
+        },
+        {
+          "archived": false,
+          "id": "478de645-fa92-46d3-8d51-02299eb5fc5c",
+          "text": "prospect"
+        },
+        {
+          "archived": false,
+          "id": "ee52a9b4-01c0-41cb-9dd1-cc6bb1948cba",
+          "text": "evaluating"
+        }
+      ]
+    },
+    "code": "kwCompanyStatus",
+    "updatedAt": "2021-11-25T04:31:31.253Z",
+    "createdAt": "2020-09-22T03:50:14.778Z",
+    "module": "CRM",
+    "description": "CRM Company Status",
+    "id": "kwCompanyStatus",
+    "name": "CRM Company Status"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "items": [
+        {
+          "archived": false,
+          "id": "bb5ee2b8-83c7-406d-ae54-aade449432e3",
+          "text": "A"
+        },
+        {
+          "archived": false,
+          "id": "b6ebb326-1996-4e55-a754-77e1f23b4d99",
+          "text": "B"
+        },
+        {
+          "archived": false,
+          "id": "e2a8d3da-a7ee-41c9-8782-77a33515504e",
+          "text": "C"
+        }
+      ]
+    },
+    "code": "kwCompanyTierList",
+    "updatedAt": "2021-01-26T17:55:05.576Z",
+    "createdAt": "2021-01-26T17:55:05.576Z",
+    "module": "CRM",
+    "description": "Company Tiers",
+    "id": "kwCompanyTierList",
+    "name": "Company Tiers"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "items": [
+        {
+          "archived": false,
+          "id": "9bccb49f-1047-41d7-8850-8c189ce0da27",
+          "text": "client"
+        },
+        {
+          "archived": false,
+          "id": "eef15ed2-9ae9-4877-b9e4-4f5003ddcd24",
+          "text": "partner"
+        },
+        {
+          "archived": false,
+          "id": "638942e3-ddef-4164-b97a-43109b485e8b",
+          "text": "supplier"
+        },
+        {
+          "archived": false,
+          "id": "ee57a797-b72a-4091-9e02-8097f7b85269",
+          "text": "competitor"
+        }
+      ]
+    },
+    "code": "kwCompanyType",
+    "updatedAt": "2020-09-22T03:50:47.395Z",
+    "createdAt": "2020-09-02T00:52:31.381Z",
+    "module": "CRM",
+    "description": "CRM Company Type",
+    "id": "kwCompanyType",
+    "name": "CRM Company Type"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "items": [
+        {
+          "archived": false,
+          "id": "049f62a3-4e01-440b-a385-824f1850c318",
+          "text": "Mountain Biking"
+        },
+        {
+          "archived": false,
+          "id": "7f7125f8-7522-423b-b710-070a77298d67",
+          "text": "Whiskey"
+        },
+        {
+          "archived": false,
+          "id": "7d038d98-73cd-490f-bce3-efbb2cdaaa3b",
+          "text": "Wine"
+        },
+        {
+          "archived": false,
+          "id": "4cde4084-968d-4268-b990-5732805b476a",
+          "text": "Fitness"
+        },
+        {
+          "archived": false,
+          "id": "2ace82b6-5519-43fc-a8c6-9b225508c32c",
+          "text": "Theatre"
+        },
+        {
+          "archived": false,
+          "id": "e1f5f522-9cbe-44bf-a30b-3d675ddf9490",
+          "text": "Gaming"
+        },
+        {
+          "archived": false,
+          "id": "cedaba6e-6fb7-4b5b-bec3-728dff4f6747",
+          "text": "Running"
+        }
+      ]
+    },
+    "code": "kwContactInterest",
+    "updatedAt": "2020-11-17T02:33:42.882Z",
+    "createdAt": "2020-11-17T02:33:42.882Z",
+    "module": "CRM",
+    "description": "CRM Contact Interest",
+    "id": "kwContactInterest",
+    "name": "CRM Contact Interest"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "items": [
+        {
+          "archived": false,
+          "id": "9bd2e48c-4a64-4596-9cf3-6c29c0334924",
+          "text": "Active"
+        },
+        {
+          "archived": false,
+          "id": "fb985f01-4737-404b-8b08-66564879c3dc",
+          "text": "Inactive"
+        },
+        {
+          "archived": false,
+          "id": "c756b372-d519-42cd-a29f-a4ff0a1cc538",
+          "text": "Prospective"
+        }
+      ]
+    },
+    "code": "kwContactStatus",
+    "updatedAt": "2021-10-11T01:16:43.610Z",
+    "createdAt": "2021-10-11T00:16:41.007Z",
+    "module": "CRM",
+    "description": "Contact Status",
+    "id": "kwContactStatus",
+    "name": "CRM Contact Status"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "items": [
+        {
+          "archived": false,
+          "id": "06c2224f-df40-4ce4-97d5-ea053b035edb",
+          "text": "Employee"
+        },
+        {
+          "archived": false,
+          "id": "7032e452-52fe-4926-ad17-cff37654f9d5",
+          "text": "Investor"
+        }
+      ]
+    },
+    "code": "kwContactType",
+    "updatedAt": "2021-10-11T00:19:30.224Z",
+    "createdAt": "2021-10-11T00:18:49.054Z",
+    "module": "CRM",
+    "description": "Contact Types",
+    "id": "kwContactType",
+    "name": "CRM Contact Types"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "items": [
+        {
+          "archived": false,
+          "id": "f9a727ce-d35f-4cf8-8c48-81b79e302810",
+          "text": "Friend"
+        },
+        {
+          "archived": false,
+          "id": "4c710c01-2b3a-45e6-8655-e7f9be642bb6",
+          "text": "Wife"
+        },
+        {
+          "archived": false,
+          "id": "5517ec7b-2341-4b97-9b86-d5846ccbe6e6",
+          "text": "Cousin"
+        },
+        {
+          "archived": false,
+          "id": "cbcd696d-bcc9-4894-847b-849f26d041b9",
+          "text": "Advisor"
+        },
+        {
+          "archived": false,
+          "id": "9e10d26d-72d5-4a73-b40f-4f43be12cce9",
+          "text": "Supplier"
+        },
+        {
+          "archived": false,
+          "id": "804c365c-c8b0-414c-a6c1-49874d856c59",
+          "text": "Former Employee"
+        },
+        {
+          "archived": false,
+          "id": "988e5d3d-4508-442d-8a47-defd35a39274",
+          "text": "Subsidiary"
+        },
+        {
+          "archived": false,
+          "id": "063ae92d-fd02-41f7-9208-46dcf7a86fd9",
+          "text": "Related Entity"
+        },
+        {
+          "archived": false,
+          "id": "38343531-d366-4daa-b87c-e2618aec7330",
+          "text": "Has worked with"
+        }
+      ]
+    },
+    "code": "kwEntityRelationTypes",
+    "updatedAt": "2020-10-21T20:29:18.839Z",
+    "createdAt": "2020-10-20T03:56:28.445Z",
+    "module": "Common",
+    "description": "Entity Relationship Types",
+    "id": "kwEntityRelationTypes",
+    "name": "Entity Relationship Types"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "items": [
+        {
+          "archived": false,
+          "id": "26d7e244-d369-42cf-bd32-502b83b3191b",
+          "text": "HOURS"
+        },
+        {
+          "archived": false,
+          "id": "fadfa11b-7a77-492b-82ad-4d285a88462f",
+          "text": "KILOGRAM"
+        },
+        {
+          "archived": false,
+          "id": "9713d1fb-ec58-4ea4-8ec3-659eb2cdc871",
+          "text": "FEET"
+        },
+        {
+          "archived": false,
+          "id": "81df44d7-b483-4022-b9a3-59f39ee04fe8",
+          "text": "METERS"
+        }
+      ]
+    },
+    "code": "kwInventoryUnitMeasureList",
+    "updatedAt": "2020-09-14T06:54:54.948Z",
+    "createdAt": "2020-09-14T06:54:54.948Z",
+    "module": "Inventory",
+    "description": "Inventory Unit of Measure",
+    "id": "kwInventoryUnitMeasureList",
+    "name": "Inventory Unit of Measure"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "items": [
+        {
+          "archived": false,
+          "text": "admin",
+          "id": "fd388ae3-3368-48e9-bc67-c084bdb35a31"
+        },
+        {
+          "archived": false,
+          "id": "2e4faf97-3b9a-4cac-b84a-0d3e43d9b3d4",
+          "text": "manager"
+        }
+      ]
+    },
+    "code": "kwMemberGroupList",
+    "updatedAt": "2020-09-03T00:50:47.041Z",
+    "createdAt": "2020-07-30T06:12:17.756Z",
+    "module": "Member",
+    "description": "Member Groups",
+    "id": "kwMemberGroupList",
+    "name": "Member Groups"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "items": [
+        {
+          "archived": false,
+          "id": "c15eb7ac-2d96-450b-b6a2-018c06493fb0",
+          "text": "Admin"
+        },
+        {
+          "archived": false,
+          "id": "4d682322-4a92-4cdb-9113-3f9b8a79cf7c",
+          "text": "Development"
+        },
+        {
+          "archived": false,
+          "id": "9fead35a-0b02-4eee-bea6-633a25b562d0",
+          "text": "Ph Team"
+        },
+        {
+          "archived": false,
+          "id": "a7ea9139-52e7-4221-bd90-b6203f42ef50",
+          "text": "BNE Team"
+        },
+        {
+          "archived": false,
+          "id": "beb61bcb-7b28-446d-82e2-2a9b1d6059f3",
+          "text": "UX"
+        }
+      ]
+    },
+    "code": "kwMemberTeamType",
+    "updatedAt": "2021-06-22T04:39:42.575Z",
+    "createdAt": "2020-09-24T04:46:35.368Z",
+    "module": "Member",
+    "description": "Member Teams",
+    "id": "kwMemberTeamType",
+    "name": "Member Teams"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "items": [
+        {
+          "archived": false,
+          "id": "69cae193-989e-4ff7-ba2a-b70d3defffce",
+          "text": "Commitment"
+        },
+        {
+          "archived": false,
+          "id": "eeb5bc5e-f75a-440b-8406-865ed159f2a6",
+          "text": "Development Commenced"
+        },
+        {
+          "archived": false,
+          "id": "4a6799ff-0721-44a8-970a-dfc4e0d94ec9",
+          "text": "Sprint"
+        },
+        {
+          "archived": false,
+          "id": "870d9c8e-c0a8-4d05-b5b4-1c233b0a6389",
+          "text": "UAT"
+        },
+        {
+          "archived": false,
+          "id": "f876af86-5e51-45f3-a0a5-a0eab6a85fde",
+          "text": "Production"
+        },
+        {
+          "archived": false,
+          "id": "da211038-a492-4eaa-9318-ccb7b4b580c9",
+          "text": "Warranty"
+        }
+      ]
+    },
+    "code": "kwMilestoneTypeList",
+    "updatedAt": "2020-09-01T06:11:20.026Z",
+    "createdAt": "2020-09-01T06:11:20.026Z",
+    "module": "Project",
+    "description": "Milestone Type",
+    "id": "kwMilestoneTypeList",
+    "name": "Milestone Type"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "items": [
+        {
+          "archived": false,
+          "id": "9a8f6f76-0c52-4196-beb3-22d87e62b463",
+          "text": "STATUS-REPORT"
+        },
+        {
+          "archived": false,
+          "id": "7e2359d7-5bf6-434a-9155-f0bf6e6e7d43",
+          "text": "GENERAL-NOTE"
+        },
+        {
+          "archived": false,
+          "id": "d1d2b1a1-19a6-48e0-8b37-3a396dd5f175",
+          "text": "BACKGROUND"
+        },
+        {
+          "archived": false,
+          "id": "984ae9c5-7029-4484-b4ee-3379ec90f903",
+          "text": "COMMENTARY"
+        }
+      ]
+    },
+    "code": "kwNoteTypes",
+    "updatedAt": "2020-12-24T01:46:46.696Z",
+    "createdAt": "2020-12-24T01:46:46.696Z",
+    "module": "Common",
+    "description": "Note Types",
+    "id": "kwNoteTypes",
+    "name": "Note Types"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "items": [
+        {
+          "archived": false,
+          "id": "12c69da1-b2c3-40f3-8e2d-22e75ee70e83",
+          "text": "Embrace"
+        },
+        {
+          "archived": false,
+          "id": "12caf77b-a97d-4b68-9196-ca28928a6dc7",
+          "text": "Project - Web"
+        },
+        {
+          "archived": false,
+          "id": "df732513-4c46-4410-b136-6616991e66d6",
+          "text": "Support"
+        },
+        {
+          "archived": false,
+          "id": "717b2298-c295-4ebb-8bc9-d51b33c1cba8",
+          "text": "Analysis"
+        },
+        {
+          "archived": false,
+          "id": "1fefac8c-1229-46a7-bdbc-967983012a22",
+          "text": "Project - App"
+        }
+      ]
+    },
+    "code": "kwOpportunityType",
+    "updatedAt": "2021-04-06T23:10:55.950Z",
+    "createdAt": "2020-11-16T21:14:55.026Z",
+    "module": "CRM",
+    "description": "CRM Opportunity Types",
+    "id": "kwOpportunityType",
+    "name": "CRM Opportunity Types"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "items": [
+        {
+          "archived": false,
+          "id": "f574ddd5-8009-43a7-8b51-bc0d46c509b1",
+          "text": "ETC"
+        }
+      ]
+    },
+    "code": "kwOrderDeliveryTypeList",
+    "updatedAt": "2020-09-09T06:35:56.513Z",
+    "createdAt": "2020-09-09T06:35:56.513Z",
+    "module": "Inventory",
+    "description": "Invoice Delivery Type",
+    "id": "kwOrderDeliveryTypeList",
+    "name": "Invoice Delivery Type"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "items": [
+        {
+          "archived": false,
+          "text": "Website",
+          "id": "5cd0c28d-b0c2-48e8-989f-58f9a3f626cb"
+        },
+        {
+          "archived": false,
+          "text": "Networking",
+          "id": "d79678b3-ec80-4423-8fc0-7bd011b16661"
+        },
+        {
+          "archived": false,
+          "text": "Referral",
+          "id": "4acb2e4b-0fd0-4804-83e3-be9c4a0f9f74"
+        },
+        {
+          "archived": false,
+          "text": "Existing Client",
+          "id": "16af45de-142f-45a5-b400-486598fd0dec"
+        }
+      ]
+    },
+    "code": "kwProjectSourceList",
+    "updatedAt": "2021-03-30T05:15:04.913Z",
+    "createdAt": "2020-04-21T22:25:53.599Z",
+    "module": "Project",
+    "description": "Project Source",
+    "id": "kwProjectSourceList",
+    "name": "Project Source"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "items": [
+        {
+          "archived": false,
+          "text": "COMPLETED"
+        },
+        {
+          "archived": false,
+          "text": "SCHEDULED"
+        },
+        {
+          "archived": false,
+          "text": "IN PROGRESS"
+        },
+        {
+          "archived": false,
+          "text": "DELAYED"
+        }
+      ]
+    },
+    "code": "kwProjectStatus",
+    "updatedAt": "2020-08-27T03:58:29.588Z",
+    "createdAt": "2020-08-24T06:50:01.245Z",
+    "module": "Project",
+    "description": "Project Status",
+    "id": "kwProjectStatus",
+    "name": "Project Status"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "items": [
+        {
+          "archived": false,
+          "text": "1 - Normal"
+        },
+        {
+          "archived": false,
+          "text": "2 - Medium"
+        },
+        {
+          "archived": false,
+          "text": "3 - High Priority"
+        },
+        {
+          "archived": false,
+          "text": "4 - Critical"
+        },
+        {
+          "archived": false,
+          "text": "5 - Now"
+        }
+      ]
+    },
+    "code": "kwTaskPriorityList",
+    "updatedAt": "2020-09-02T00:49:58.071Z",
+    "createdAt": "2020-04-21T22:22:05.346Z",
+    "module": "Task",
+    "description": "Task Priority List",
+    "id": "kwTaskPriorityList",
+    "name": "Task Priority List"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "items": [
+        {
+          "archived": false,
+          "text": "IDLE"
+        },
+        {
+          "archived": false,
+          "text": "SCHEDULED"
+        },
+        {
+          "archived": false,
+          "text": "ALLOCATED"
+        },
+        {
+          "archived": false,
+          "text": "COMPLETE"
+        },
+        {
+          "archived": false,
+          "text": "INCOMPLETE"
+        },
+        {
+          "archived": false,
+          "text": "TO-DO"
+        },
+        {
+          "archived": false,
+          "text": "IN PROGRESS"
+        }
+      ]
+    },
+    "code": "kwTaskStatusList",
+    "updatedAt": "2020-08-26T05:29:26.537Z",
+    "createdAt": "2020-04-21T22:22:54.106Z",
+    "module": "Task",
+    "description": "Task Status List",
+    "id": "kwTaskStatusList",
+    "name": "Task Status List"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "items": [
+        {
+          "archived": false,
+          "id": "c3af6a47-429d-4659-89b5-10232ea3593f",
+          "text": "Bug"
+        },
+        {
+          "archived": false,
+          "id": "8815f8f7-6a1e-414f-bc15-64829692ee68",
+          "text": "Feature"
+        },
+        {
+          "archived": false,
+          "id": "92276e1f-8acc-43e4-b718-ea680f2eb2fe",
+          "text": "Enhancement"
+        },
+        {
+          "archived": false,
+          "id": "24417e74-4c3a-4dfe-9b9f-5b0af047c773",
+          "text": "Analysis"
+        },
+        {
+          "archived": false,
+          "id": "e38b6469-23cc-45ca-aa6f-37d8664bf3ef",
+          "text": "General Task"
+        }
+      ]
+    },
+    "code": "kwTaskTypeList",
+    "updatedAt": "2020-10-01T21:37:35.164Z",
+    "createdAt": "2020-04-21T22:23:33.098Z",
+    "module": "Task",
+    "description": "Task Types List",
+    "id": "kwTaskTypeList",
+    "name": "Task Type List"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "items": [
+        {
+          "archived": false,
+          "id": "ee682c60-35ae-4c1a-aef3-630c0f33da7e",
+          "text": "Music"
+        },
+        {
+          "archived": false,
+          "id": "91c63e72-ea8a-434c-80a6-5a3d5b47051e",
+          "text": "Movies"
+        },
+        {
+          "archived": false,
+          "id": "d54ef7fa-aaa4-4431-8e76-b563b7116556",
+          "text": "Anime"
+        },
+        {
+          "archived": false,
+          "id": "8391347a-4ffc-4e31-9d45-0983d9c2aef9",
+          "text": "Sport"
+        }
+      ]
+    },
+    "code": "kwTeamMemberInterestsList",
+    "updatedAt": "2021-09-16T21:03:52.092Z",
+    "createdAt": "2021-09-16T21:03:26.438Z",
+    "module": "Member",
+    "description": "Team Member Interests",
+    "id": "kwTeamMemberInterestsList",
+    "name": "Team Member Interests"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "items": [
+        {
+          "archived": false,
+          "id": "82850d60-85e1-4ca7-9171-920ce2e4709e",
+          "text": "Frontend"
+        },
+        {
+          "archived": false,
+          "id": "e4e7c113-1dc2-464a-b76d-13a17ef4c95c",
+          "text": "Project Management"
+        }
+      ]
+    },
+    "code": "kwTeamMemberSkillsList",
+    "updatedAt": "2021-11-08T03:28:37.648Z",
+    "createdAt": "2021-11-08T02:25:06.709Z",
+    "module": "Member",
+    "description": "Team Member Skills",
+    "id": "kwTeamMemberSkillsList",
+    "name": "Team Member Skills"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "templates": [
+        {
+          "name": "Form15 - MB Test",
+          "id": "Form15 - MB Test",
+          "s3Path": "settings/pdf-tpl/Project/Form15 - MB Test-1637542189369.pdf",
+          "type": "Project",
+          "fields": {
+            "competentPerson.contactPerson": "r",
+            "competentPerson.postCode": "r",
+            "lga": "r",
+            "competentPerson.postalSuburb": "r",
+            "descriptionOfAspectsCertified.0": "r",
+            "descriptionOfAspectsCertified.2": "r",
+            "descriptionOfAspectsCertified.1": "r",
+            "location.postcode": "r",
+            "descriptionOfAspectsCertified.4": "r",
+            "competentPerson.companyName": "r",
+            "descriptionOfAspectsCertified.3": "r",
+            "descriptionOfAspectsCertified.6": "r",
+            "competentPerson.licenseRegistrationType": "r",
+            "descriptionOfAspectsCertified.5": "r",
+            "competentPerson.mobileNumber": "r",
+            "descriptionOfAspectsCertified.7": "r",
+            "competentPerson.postalAddress": "r",
+            "competentPerson.email": "r",
+            "location.incLotAndPlanDetails": "r",
+            "competentPerson.licenseRegistrationNumber": "r",
+            "_generationDate": "r",
+            "buildingCertifierReferenceNumber": "r",
+            "competentPerson.signature": "e",
+            "competentPerson.postalState": "r",
+            "developmentalApprovalNumber": "r",
+            "basisOfCertificationString": "r",
+            "location.state": "r",
+            "referenceDocumentation": "r",
+            "competentPerson.phoneNumber": "r",
+            "location.address2WithSuburb": "r",
+            "location.address1": "r",
+            "competentPerson.fullName": "r"
+          }
+        },
+        {
+          "name": "Form12 - MB Test",
+          "id": "Form12 - MB Test",
+          "s3Path": "settings/pdf-tpl/Project/Form12 - MB Test.pdf",
+          "type": "Task",
+          "fields": {
+            "competentPerson.contactPerson": "r",
+            "buildingStructure6": "r",
+            "buildingStructure5": "r",
+            "buildingStructure7": "r",
+            "competentPerson.postcode": "r",
+            "project.lga": "r",
+            "competentPerson.mobileNumber": "r",
+            "descriptionOfTheExtent": "r",
+            "competentPerson.email": "r",
+            "competentPerson.licenseRegistrationNumber": "r",
+            "_generationDate": "r",
+            "aspectOfWork": "r",
+            "project.location.incLotAndPlanDetails": "r",
+            "project.location.postcode": "r",
+            "classOfBuildingStructure5": "r",
+            "classOfBuildingStructure4": "r",
+            "classOfBuildingStructure7": "r",
+            "classOfBuildingStructure6": "r",
+            "classOfBuildingStructure1": "r",
+            "project.location.address1": "r",
+            "classOfBuildingStructure0": "r",
+            "classOfBuildingStructure3": "r",
+            "competentPerson.phoneNumber": "r",
+            "classOfBuildingStructure2": "r",
+            "project.location.address2": "r",
+            "project.developmentalApprovalNumber": "r",
+            "project.buildingCertifierName": "r",
+            "project.location.state": "r",
+            "competentPerson.address": "r",
+            "competentPerson.state": "r",
+            "competentPerson.companyName": "r",
+            "competentPerson.licenseRegistrationType": "r",
+            "appointedCompetentPersonPostalAddress2": "r",
+            "competentPerson.signature": "e",
+            "project.buildingCertifierReferenceNumber": "r",
+            "basisOfCertification.0": "r",
+            "referenceDocumentation": "r",
+            "basisOfCertification.6": "r",
+            "buildingStructureOptions.3": "r",
+            "buildingStructureOptions.4": "r",
+            "buildingStructureOptions.1": "r",
+            "basisOfCertification.1": "r",
+            "buildingStructureOptions.2": "r",
+            "basisOfCertification.2": "r",
+            "appointedCompetentPersonInspectionDate": "r",
+            "basisOfCertification.3": "r",
+            "competentPerson.fullName": "r",
+            "buildingStructureOptions.0": "r",
+            "basisOfCertification.4": "r"
+          }
+        }
+      ]
+    },
+    "code": "pdf-tpl-setting",
+    "updatedAt": "2021-12-09T04:27:39.091Z",
+    "createdAt": "2021-09-27T22:24:44.786Z",
+    "id": "pdf-tpl-setting",
+    "module": "common",
+    "name": "PDF Templates"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "allowedTypes": "task-list,github,simple,complex",
+      "incLGA": null,
+      "sources": "Website,Networking,Referral,Existing Client",
+      "incAppointedCompetentPerson": true,
+      "incLotAndPlanDetails": null,
+      "incEngineeringFields": true,
+      "buildingStructureOptions": [],
+      "label": null,
+      "engineering": null,
+      "incProjectLocation": true,
+      "type": null,
+      "defaultType": "task-list",
+      "githubWebhookSecret": "kraketoa",
+      "allowGithubIntegration": "yes",
+      "classBuildingStructure": [],
+      "defaultXeroContactId": "b7aa61bc-2f1a-48fc-9db1-023bc4a0f96a",
+      "attributes": {
+        "sellerName": {
+          "label": "Seller Name",
+          "type": "SINGLE_LINE_TEXT",
+          "key": "sellerName",
+          "desc": "Seller Name"
+        },
+        "dogsName": {
+          "label": "Dog's name",
+          "type": "SINGLE_LINE_TEXT",
+          "key": "dogsName",
+          "desc": "enter your do'g name"
+        }
+      },
+      "key": null,
+      "desc": null
+    },
+    "code": "project-setting",
+    "updatedAt": "2022-01-25T01:40:33.999Z",
+    "createdAt": "2020-02-28T03:54:54.438Z",
+    "id": "project-setting",
+    "module": "project"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "permissions": {
+        "admin": true
+      }
+    },
+    "code": "role-perms@admin",
+    "updatedAt": "2022-01-04T17:26:13.336Z",
+    "createdAt": "2022-01-04T17:26:13.336Z",
+    "module": "sundry",
+    "id": "role-perms@admin",
+    "name": "Admin Permission"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "slackStandupHookUrl": "https://hooks.slack.com/services/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",
+      "slackChannelId": "CNE5C7XUM",
+      "defaultAllocDuration": "8"
+    },
+    "code": "scheduler-setting",
+    "updatedAt": "2021-01-11T22:35:47.356Z",
+    "createdAt": "2020-03-03T02:45:27.723Z",
+    "module": "scheduler",
+    "id": "scheduler-setting"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "contactImportSchema": "{\n  \"Mailing Street\":\"location.address1\",\n\"Account Name\": \"company.name\",\n\"First Name\": \"firstName\",\n\"Last Name\": \"lastName\",\n\"Title\": \"jobTitle\",\n\"Phone\": \"mobileNumber\",\n\"Email\": \"email\",\n\"Telephone\": \"telephoneNumber\",\n\"Description\": \"description\",\n\"Type\": \"type\",\n\"Status\": \"status\",\n\"Website\": \"website\",\n\"Linked In\": \"linkedin\"\n}"
+    },
+    "code": "setup-setting",
+    "updatedAt": "2021-12-06T07:56:41.450Z",
+    "createdAt": "2021-12-06T07:56:41.450Z",
+    "module": "core",
+    "id": "setup-setting"
+  },
+  {
+    "__typename": "Setting",
+    "value": {
+      "machineId": "default",
+      "completeTaskStatus": "COMPLETE",
+      "attributes": {
+        "notion_id": {
+          "key": "notion_id",
+          "label": "Notion ID"
+        }
+      },
+      "type": "Technical, Desk, Planting",
+      "priority": "1 - Normal, 2 - Medium, 3 - High Priority, 4 - Critical, 5 - Now",
+      "defaultFSM": "{\"id\":\"fetch\",\"initial\":\"idle\",\"context\":{\"retries\":0},\"states\":{\"idle\":{\"on\":{\"LOAD\":\"loading\",\"FETCH\":\"fetching\",\"EDIT\":\"success\"}},\"fetching\":{\"on\":{\"LOAD\":\"loading\",\"UNLOAD\":\"idle\"}},\"loading\":{\"on\":{\"RESOLVE\":\"success\",\"REJECT\":\"failure\",\"BACK\":\"idle\"}},\"success\":{\"type\":\"final\"},\"failure\":{\"on\":{\"RETRY\":{\"target\":\"loading\"}}}}}",
+      "status": "IDLE, SCHEDULED, ALLOCATED, COMPLETE, INCOMPLETE"
+    },
+    "code": "task-setting",
+    "updatedAt": "2021-12-23T06:44:03.387Z",
+    "createdAt": "2020-03-16T03:21:57.122Z",
+    "id": "task-setting",
+    "module": "project"
+  }
+]

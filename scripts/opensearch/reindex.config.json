@@ -1,0 +1,46 @@
+{
+  "checklist": {
+    "mappings": {
+      "properties": {
+        "sortOrder": {
+          "type": "float"
+        }
+      }
+    }
+  },
+  "task": {
+    "mappings": {
+      "properties": {
+        "invoiceSetting": {
+          "properties": {
+            "invoiceDate": {
+              "type": "long"
+            }
+          }
+        }
+      }
+    }
+  },
+  "project": {
+    "mappings": {
+      "properties": {
+        "attributes": {
+          "type": "nested",
+          "properties": {
+            "buildingSetup": {
+              "type": "nested",
+              "properties": {
+                "pricing": {
+                  "type": "nested"
+                },
+                "unitSetup": {
+                  "type": "nested"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

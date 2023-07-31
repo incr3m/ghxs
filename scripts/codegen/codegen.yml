@@ -1,0 +1,12 @@
+overwrite: true
+schema: '../../scripts/codegen/schema.js'
+generates:
+  ../../apps/main/src/gqlTypes.tsx:
+    config:
+      nonOptionalTypename: true
+    plugins:
+      - 'typescript'
+  ../../apps/main/src/common/graphql-api/types/api-query.ts:
+    - ../../scripts/codegen/api-query.js
+  ../../apps/main/src/icons/iconography/IconBase.stories.tsx:
+    - ../../scripts/codegen/icon-base-generator.js

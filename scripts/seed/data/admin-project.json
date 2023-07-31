@@ -1,0 +1,595 @@
+[
+    {
+        "isInternal": true,
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "color": "#2196f3",
+        "locationId": "83995871-4dcc-4227-afc7-6ea9b219dede",
+        "__typename": "Project",
+        "name": "MB Internals",
+        "attributes": {
+            "sellerName": null
+        },
+        "id": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "trafficLight": "green",
+        "status": "IN PROGRESS",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "urls": null,
+        "__typename": "Task",
+        "id": "fe74538d-8965-4c11-b1f3-39ba0a11324a",
+        "jobDetails": null,
+        "title": "TEst GM",
+        "billable": null,
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "a4bd40c7-9f49-42c9-ab4a-81d95cd11afc",
+        "title": "Phone Call",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "76708c8c-32d8-40f9-9e63-5824571af564",
+        "title": "Demo",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "bef1a9ca-d947-40ff-8f65-d806cce59433",
+        "title": "Marketing",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "description": "Monday catchup meeting to discuss the weekly goal",
+        "id": "932be494-b019-43d8-835f-9a122a7f2fc5",
+        "title": "Start of Week Catchup",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "a366c8e9-6069-4d3c-9e25-4178db722f1a",
+        "jobDetails": "creating/updating tickets",
+        "title": "Ticket Management",
+        "billable": null,
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "isGlobalBookmark": true,
+        "__typename": "Task",
+        "description": "daily morning catchup to discuss the team's to-do for the day",
+        "id": "1699f466-6dbd-45fa-a931-af87c7a497e9",
+        "title": "Standup",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "23fe2f41-7fd9-4293-bf7c-341d5622e944",
+        "title": "Team management",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "isGlobalBookmark": false,
+        "__typename": "Task",
+        "id": "bf69cabf-158d-4d5e-8af2-9c64033ef613",
+        "title": "Pair programming",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "c6156bce-8916-49c2-a270-403b2480260f",
+        "title": "Team Pays",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "c27f665e-abe9-4e74-a06c-593855cfd636",
+        "title": "research",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "description": "meetings, sessions and working through material",
+        "id": "83b1d53b-d879-4e43-bc95-8b92ce298cc6",
+        "title": "Business Accelerator (DENT KPI)",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "51eacdb6-0ca4-4f84-865e-78b1050a8fda",
+        "title": "Account Management",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "isGlobalBookmark": true,
+        "__typename": "Task",
+        "description": "Friday, before EOD meeting to discuss about weekly goal",
+        "id": "7fa97a71-77b2-4bdc-9693-c4d3ee2a07f5",
+        "title": "End of Week Catchup",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "description": "Work regarding WILs documents and planning",
+        "id": "cb6c5849-2e1d-46c8-91bc-c4153417c26e",
+        "title": "WILs ",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "isGlobalBookmark": true,
+        "__typename": "Task",
+        "description": "Small break up to 15 minutes",
+        "id": "f7dd8048-7195-4b0e-bd2c-b4b55ea1f2ce",
+        "title": "Small break",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "description": "Michael's company Board meetings and prep",
+        "id": "050b4fbf-36aa-4b7b-9182-ee9734220d9a",
+        "jobDetails": "Michael's company Board meetings and prep",
+        "priority": "1 - Normal",
+        "title": "Essential Tech Advisory Board",
+        "type": "General Task",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "isGlobalBookmark": false,
+        "__typename": "Task",
+        "description": "A task relating to editing/creating a documentation for something.",
+        "id": "ccf1f831-d787-403a-9245-24a6009fcd78",
+        "title": "Documentation",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "73b6e911-e4fc-4274-b1db-dcbfd32a9cb1",
+        "title": "Networking Events",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "isGlobalBookmark": false,
+        "__typename": "Task",
+        "description": "start of the morning coffee run. Can't do it before work starts cause SB opens at 6AM :(",
+        "id": "c7a8a255-fd16-4b3f-aab7-8edfee71a63a",
+        "title": "Coffee Run",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "__typename": "Task",
+        "description": "content and technical changes to the new MB website",
+        "priority": "2 - Medium",
+        "title": "MB Website",
+        "type": "Technical",
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "id": "72961749-1e35-463b-9c07-767780ac195f",
+        "jobDetails": "content and technical changes to the new MB website",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "estimatedEffort": 20,
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "300cb221-998b-45d3-a544-9b45cd3fb85f",
+        "jobDetails": "New team member induction",
+        "title": "Induction",
+        "type": "General Task",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "1e96e42f-7d46-49fe-baf1-aa3d99d6cafd",
+        "title": "AWS Cost Utilization",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "urls": [
+            {
+                "label": "Notion Ticket",
+                "url": "https://www.notion.so/moretonblue/Task-related-bugs-and-tweaks-acb648500ba649978fd1984adc4a6946"
+            }
+        ],
+        "__typename": "Task",
+        "id": "b1f8be91-319b-4487-92e6-a41c09857d31",
+        "title": "Task related bugs and tweaks",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "fbea00db-0c0a-418f-b524-fd87d236d514",
+        "title": "Business Development",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "e23e15ab-da7c-4e97-b5aa-086a98920b12",
+        "jobDetails": "prospecting / demo's  calls before qualifying ",
+        "title": "Business Dev - embrace",
+        "billable": null,
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "c1fd70df-50fd-4bd1-bdee-4b843168911d",
+        "title": "Checking team's timesheets",
+        "type": "General Task",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "due": "2020-11-10T00:00:00.000Z",
+        "isGlobalBookmark": false,
+        "__typename": "Task",
+        "attributes": {
+            "notion_id": null
+        },
+        "id": "05ce7654-7d44-4ef3-8034-8ffbb479f39b",
+        "title": "General Management",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "0dfe20b1-1f0e-46fd-8940-c84bcf66c409",
+        "title": "Update new opportunity",
+        "type": "General Task",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "description": "Travel between workplaces / local / in country / overseas",
+        "id": "0f6f9792-e0a6-44d5-acb0-934bac2333e9",
+        "title": "Travel",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "8902f884-b7b7-4414-97ea-a2c7d44300b6",
+        "title": "Individual plans",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "5d27b990-14f8-459c-82c9-b29db4b0a772",
+        "title": "Sick Leave",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "4322dec7-3bd8-41d9-8e26-9a2265da5e53",
+        "title": "Public Holiday",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "84e0e939-973b-4232-99ca-f820af44b6ea",
+        "title": "Monthly 1 on 1's",
+        "type": "General Task",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "aeceaabb-c9e7-4412-9d0c-0214623dedb2",
+        "title": "Monthly Review",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "6edd9da3-11cc-4da2-9181-3a5d90c2ea86",
+        "title": "Emergency Leave",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "71138de5-969e-4e22-8a72-f8c50e03cd89",
+        "jobDetails": "Assisting others",
+        "title": "Mentoring",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "5e1df608-4dd9-44a8-96b7-fd2ad697d887",
+        "jobDetails": "Forecasting, planning",
+        "title": "Business Strategy",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "aca3fa48-efab-49be-a589-c70d6dd8f6e6",
+        "title": "Resource scheduling",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "description": "1-hour lunch break",
+        "id": "aaab237d-8b98-4407-a329-6f040a396c83",
+        "title": "Lunch Break",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "isGlobalBookmark": true,
+        "__typename": "Task",
+        "id": "0607abef-59ce-4152-bcf4-22d678d592fb",
+        "title": "SOD Prep",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "isGlobalBookmark": true,
+        "__typename": "Task",
+        "id": "d6a6e9c8-217d-4a76-a44a-4ae0dc96d734",
+        "title": "Meetings",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "description": "Workshops delivered by Filta",
+        "id": "25cffb1f-5fe6-40aa-8db9-4300b2c2ce0d",
+        "title": "Filta Workshop",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "4eb8b21f-cd0d-4d66-b771-5249a97f6b0f",
+        "title": "github access / security",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "19bc764e-ce37-426c-aaff-33eb6132abae",
+        "title": "Prospecting",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "description": "Business partners, suppliers",
+        "id": "710cad6a-5261-4b5c-9cdc-89f63744ab17",
+        "title": "Partner Meeting",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "description": "Annual Leave",
+        "attributes": {
+            "notion_id": null
+        },
+        "id": "86a97e12-034f-4195-a523-ca55d989d3bc",
+        "title": "Recreational Leave",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "f0e217ea-fb58-4a4c-a397-b6fd4c248e40",
+        "title": "Investigations",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "d9164f85-01a0-4c5f-b311-1c8d6a30f4ee",
+        "title": "Other tasks",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "0bb6d110-ca32-4036-841d-7bd7ecdfff15",
+        "title": "Task browsing",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "ac00d140-6cc3-425a-b914-2fdb560b10b6",
+        "title": "Onboarding",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "8913b478-3f2b-4d64-b645-c66a336bfe44",
+        "title": "Accounting / Bookeeping",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "__typename": "Task",
+        "start": "2022-01-18T00:00:00.000Z",
+        "priority": "1 - Normal",
+        "title": "Continue refactor roles for standard coding",
+        "type": "General Task",
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "due": "2022-01-18T00:00:00.000Z",
+        "id": "8b169591-0f05-4255-a977-731ee3530ff4",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "estimatedEffort": 2,
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "296a0271-24f5-4221-910d-2be786f6e5fd",
+        "title": "Recruitment of new team members",
+        "type": "General Task",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "isGlobalBookmark": true,
+        "__typename": "Task",
+        "id": "26f12aa9-6e8f-42d5-84ca-3123327332f3",
+        "title": "Watching loom video",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "01da618e-f3f0-495c-9f32-80c3539f348b",
+        "title": "Training / Courses",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    },
+    {
+        "createdAt": "2022-01-26T05:37:25.799Z",
+        "__typename": "Task",
+        "id": "deea1aa9-6630-4444-9d95-8f7886042522",
+        "title": "General Admin",
+        "projectId": "bfeb1c16-06e0-488f-ba0f-2924ee3f881b",
+        "status": "IDLE",
+        "updatedAt": "2022-01-26T05:37:25.799Z"
+    }
+]

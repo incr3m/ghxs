@@ -1,0 +1,11 @@
+{
+  "name": "@mb-embrace/config-storybook",
+  "version": "0.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "update-dependencies": "npx npm-check-updates -u"
+  },
+  "dependencies": {
+    "@mb-embrace/config-mui": "*"
+  }
+}
