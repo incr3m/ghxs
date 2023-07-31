@@ -1,0 +1,24 @@
+name: Pipeline Tests
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+    inputs:
+      run_all:
+        required: false
+        type: boolean
+
+jobs:
+  tests:
+    name: Run all tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - name: Install deps
+        run: |
+          yarn --version
+          yarn install || cat yarn-error.log
