@@ -21,4 +21,4 @@ jobs:
       - name: Install deps
         run: |
           yarn --version
-          yarn install || cat yarn-error.log
+          yarn install
