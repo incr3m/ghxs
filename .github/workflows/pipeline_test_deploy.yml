@@ -1,0 +1,20 @@
+name: LAWD Deploy Instance UAT
+
+on:
+  push:
+    branches: ['test-uat']
+  workflow_dispatch:
+
+concurrency: ci-${{ github.ref }}
+
+# https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-amazon-web-services#requesting-the-access-token
+permissions:
+  id-token: write   # This is required for requesting the JWT
+  contents: read    # This is required for actions/checkout
+
+jobs:
+  build-and-deploy-frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install deps
+        run: echo "sample job"
