@@ -11,6 +11,7 @@ jobs:
       - name: Merge by labeled
         uses: devmasx/merge-branch@master
         with:
+          message: 'merge develop into uat'
           label_name: 'review:LAWD'
           target_branch: 'test-uat'
           github_token: ${{ secrets.CI_GITHUB_TOKEN }}
